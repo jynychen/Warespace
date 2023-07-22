@@ -1,0 +1,106 @@
+#!/bin/bash
+
+WARESPACE="$(dirname "$(realpath "$0")")"
+
+main() {
+    prompt_main "$1"
+    traverse_directories "$1" "$(sub_dir_or_root "$WARESPACE" "$2")"
+}
+
+prompt_main() {
+    if [ -z "$1" ] || [[ ! " ${COMMANDS[*]} " == *" $1 "* ]]; then
+        echo "Usage: warespace <command> [path]"
+        echo "Commands:"
+        echo "  add   - add git repository as submodule"
+        echo "  sync  - sync git repository from remote"
+        echo "  check - check if git repository is dirty"
+        echo "  clean - clean git repository"
+        exit 1
+    fi
+}
+
+sub_dir_or_root() {
+    local ret
+
+    # if $2 is set and is a sub-path of $1
+    if [ -n "$2" ] && [[ $(realpath "$2") == "$1"* ]]; then
+        ret="$(realpath "$2")"
+    else
+        ret="$1"
+    fi
+
+    echo "$ret"
+}
+
+traverse_directories() {
+    local dir
+
+    while IFS= read -r -d '' dir
+    do
+        # dir is git repo
+        if [ -d "$dir/.git" ] && [ "$dir" != "$WARESPACE" ]; then
+            "$1" "$dir"
+        fi
+    done < <(find "$2" -type d -print0)
+}
+
+relative_path() {
+    realpath --relative-to="$WARESPACE" "$1"
+}
+
+prompt_command() {
+    echo -e "\033[1;34m$2\033[0m git repository start $1:"
+}
+
+## commands ##
+COMMANDS=("add" "sync" "check" "clean")
+
+add() {
+    prompt_command "${FUNCNAME[0]}" "$(relative_path "$1")"
+
+    local origin
+    cd "$1" || exit
+    # git repo is clean
+    if [ -z "$(git status --porcelain)" ]; then 
+        origin="$(git config --get remote.origin.url)"
+    fi
+    cd "$WARESPACE" || exit
+    if [ -n "$origin" ]; then
+        git submodule add "$origin" "$(relative_path "$1")"
+    fi
+}
+
+check() {
+    prompt_command "${FUNCNAME[0]}" "$(relative_path "$1")"
+
+    cd "$1" || exit
+    # git repo is dirty
+    if [ -n "$(git status --porcelain)" ]; then
+        echo -e "\033[1;31m$1\033[0m git repository is dirty:"
+        git status --short
+    fi
+    cd - > /dev/null || exit
+}
+
+sync() {
+    prompt_command "${FUNCNAME[0]}" "$(relative_path "$1")"
+    
+    cd "$1" || exit
+    git pull --all
+    git submodule update --recursive
+    cd - > /dev/null || exit
+}
+
+clean() {
+    prompt_command "${FUNCNAME[0]}" "$(relative_path "$1")"
+    
+    cd "$1" || exit
+    git remote prune origin
+    git gc --auto
+    cd - > /dev/null || exit
+}
+
+# $1 is optional path to start from
+# if path is not set, start from path of this script
+# otherwise path must be a sub-path of path of this script
+main "$@"

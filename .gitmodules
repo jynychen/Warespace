@@ -1,0 +1,288 @@
+[submodule "mysql-server"]
+	path = mysql-server
+	url = git@github.com:mysql/mysql-server.git
+[submodule "golang/go"]
+	path = golang/go
+	url = git@github.com:golang/go.git
+[submodule "golang/tools"]
+	path = golang/tools
+	url = git@github.com:golang/tools.git
+[submodule "redis"]
+	path = redis
+	url = git@github.com:redis/redis.git
+[submodule "argo-events"]
+	path = argo-events
+	url = git@github.com:argoproj/argo-events.git
+[submodule "cockpit"]
+	path = cockpit
+	url = git@github.com:cockpit-project/cockpit.git
+[submodule "kueue"]
+	path = kueue
+	url = git@github.com:kubernetes-sigs/kueue.git
+[submodule "golangci-lint"]
+	path = golangci-lint
+	url = git@github.com:golangci/golangci-lint.git
+[submodule "mariadb"]
+	path = mariadb
+	url = git@github.com:MariaDB/server.git
+[submodule "goroutine-pool/ants"]
+	path = goroutine-pool/ants
+	url = https://github.com/panjf2000/ants
+[submodule "goroutine-pool/tunny"]
+	path = goroutine-pool/tunny
+	url = git@github.com:Jeffail/tunny.git
+[submodule "goroutine-pool/pond"]
+	path = goroutine-pool/pond
+	url = git@github.com:alitto/pond.git
+[submodule "dioxus"]
+	path = dioxus
+	url = git@github.com:DioxusLabs/dioxus.git
+[submodule "sprig"]
+	path = sprig
+	url = git@github.com:Masterminds/sprig.git
+[submodule "coredns"]
+	path = coredns
+	url = https://github.com/coredns/coredns
+[submodule "micro"]
+	path = micro
+	url = git@github.com:zyedidia/micro.git
+[submodule "nix"]
+	path = nix
+	url = git@github.com:NixOS/nix.git
+[submodule "hugo"]
+	path = hugo
+	url = https://github.com/gohugoio/hugo
+[submodule "networks/rathole"]
+	path = networks/rathole
+	url = git@github.com:rapiz1/rathole.git
+[submodule "networks/wireguard-go"]
+	path = networks/wireguard-go
+	url = git@github.com:WireGuard/wireguard-go.git
+[submodule "networks/headscale"]
+	path = networks/headscale
+	url = git@github.com:juanfont/headscale.git
+[submodule "networks/frp"]
+	path = networks/frp
+	url = git@github.com:fatedier/frp.git
+[submodule "networks/croc"]
+	path = networks/croc
+	url = git@github.com:schollz/croc.git
+[submodule "networks/nebula"]
+	path = networks/nebula
+	url = git@github.com:slackhq/nebula.git
+[submodule "networks/tailscale"]
+	path = networks/tailscale
+	url = git@github.com:tailscale/tailscale.git
+[submodule "lo"]
+	path = lo
+	url = git@github.com:samber/lo.git
+[submodule "golang-cache/gorm-cache"]
+	path = golang-cache/gorm-cache
+	url = https://github.com/asjdf/gorm-cache
+[submodule "skaffold"]
+	path = skaffold
+	url = git@github.com:GoogleContainerTools/skaffold.git
+[submodule "sysprog21/vwifi"]
+	path = sysprog21/vwifi
+	url = https://github.com/sysprog21/vwifi
+[submodule "sysprog21/vcam"]
+	path = sysprog21/vcam
+	url = https://github.com/sysprog21/vcam
+[submodule "sysprog21/concurrent-programs"]
+	path = sysprog21/concurrent-programs
+	url = git@github.com:sysprog21/concurrent-programs.git
+[submodule "sysprog21/khttpd"]
+	path = sysprog21/khttpd
+	url = git@github.com:sysprog21/khttpd.git
+[submodule "sysprog21/kecho"]
+	path = sysprog21/kecho
+	url = git@github.com:sysprog21/kecho.git
+[submodule "sysprog21/fibdrv"]
+	path = sysprog21/fibdrv
+	url = git@github.com:sysprog21/fibdrv.git
+[submodule "sysprog21/simplefs"]
+	path = sysprog21/simplefs
+	url = git@github.com:sysprog21/simplefs.git
+[submodule "actions-runner-controller"]
+	path = actions-runner-controller
+	url = git@github.com:actions/actions-runner-controller.git
+[submodule "postgres"]
+	path = postgres
+	url = git@github.com:postgres/postgres.git
+[submodule "rust"]
+	path = rust
+	url = git@github.com:rust-lang/rust.git
+[submodule "wasmtime"]
+	path = wasmtime
+	url = git@github.com:bytecodealliance/wasmtime.git
+[submodule "opa"]
+	path = opa
+	url = git@github.com:open-policy-agent/opa.git
+[submodule "linux"]
+	path = linux
+	url = git@github.com:torvalds/linux.git
+[submodule "v8"]
+	path = v8
+	url = git@github.com:v8/v8.git
+[submodule "rancher/rke2"]
+	path = rancher/rke2
+	url = git@github.com:rancher/rke2.git
+[submodule "rancher/k3s"]
+	path = rancher/k3s
+	url = git@github.com:k3s-io/k3s.git
+[submodule "rancher/rke"]
+	path = rancher/rke
+	url = git@github.com:rancher/rke.git
+[submodule "rancher/k3d"]
+	path = rancher/k3d
+	url = git@github.com:k3d-io/k3d.git
+[submodule "lxd"]
+	path = lxd
+	url = https://github.com/lxc/lxd
+[submodule "do"]
+	path = do
+	url = https://github.com/samber/do
+[submodule "go-openai"]
+	path = go-openai
+	url = git@github.com:sashabaranov/go-openai.git
+[submodule "or-tools"]
+	path = or-tools
+	url = https://github.com/google/or-tools
+[submodule "visqol"]
+	path = visqol
+	url = git@github.com:google/visqol.git
+[submodule "sqlite"]
+	path = sqlite
+	url = git@github.com:sqlite/sqlite.git
+[submodule "dig"]
+	path = dig
+	url = git@github.com:uber-go/dig.git
+[submodule "minikube"]
+	path = minikube
+	url = git@github.com:kubernetes/minikube.git
+[submodule "wasmer"]
+	path = wasmer
+	url = git@github.com:wasmerio/wasmer.git
+[submodule "aquasecurity/tracee"]
+	path = aquasecurity/tracee
+	url = git@github.com:aquasecurity/tracee.git
+[submodule "aquasecurity/trivy-operator"]
+	path = aquasecurity/trivy-operator
+	url = git@github.com:aquasecurity/trivy-operator.git
+[submodule "aquasecurity/trivy"]
+	path = aquasecurity/trivy
+	url = git@github.com:aquasecurity/trivy.git
+[submodule "rustlings"]
+	path = rustlings
+	url = git@github.com:rust-lang/rustlings.git
+[submodule "TheAlgorithms/Rust"]
+	path = TheAlgorithms/Rust
+	url = git@github.com:TheAlgorithms/Rust.git
+[submodule "TheAlgorithms/C"]
+	path = TheAlgorithms/C
+	url = git@github.com:TheAlgorithms/C.git
+[submodule "TheAlgorithms/C-Plus-Plus"]
+	path = TheAlgorithms/C-Plus-Plus
+	url = git@github.com:TheAlgorithms/C-Plus-Plus.git
+[submodule "TheAlgorithms/Go"]
+	path = TheAlgorithms/Go
+	url = git@github.com:TheAlgorithms/Go.git
+[submodule "TheAlgorithms/Python"]
+	path = TheAlgorithms/Python
+	url = git@github.com:TheAlgorithms/Python.git
+[submodule "open-telemetry/opentelemetry-operator"]
+	path = open-telemetry/opentelemetry-operator
+	url = git@github.com:open-telemetry/opentelemetry-operator.git
+[submodule "open-telemetry/opentelemetry-go-contrib"]
+	path = open-telemetry/opentelemetry-go-contrib
+	url = git@github.com:open-telemetry/opentelemetry-go-contrib.git
+[submodule "open-telemetry/opentelemetry-collector"]
+	path = open-telemetry/opentelemetry-collector
+	url = git@github.com:open-telemetry/opentelemetry-collector.git
+[submodule "luna"]
+	path = luna
+	url = git@github.com:thomscoder/luna.git
+[submodule "grafana/loki"]
+	path = grafana/loki
+	url = git@github.com:grafana/loki.git
+[submodule "cel-spec"]
+	path = cel-spec
+	url = git@github.com:google/cel-spec.git
+[submodule "etcd"]
+	path = etcd
+	url = git@github.com:etcd-io/etcd.git
+[submodule "memcached"]
+	path = memcached
+	url = git@github.com:memcached/memcached.git
+[submodule "gods"]
+	path = gods
+	url = git@github.com:emirpasic/gods.git
+[submodule "hashicorp/go-getter"]
+	path = hashicorp/go-getter
+	url = git@github.com:hashicorp/go-getter.git
+[submodule "hashicorp/vault"]
+	path = hashicorp/vault
+	url = git@github.com:hashicorp/vault.git
+[submodule "hashicorp/errwrap"]
+	path = hashicorp/errwrap
+	url = git@github.com:hashicorp/errwrap.git
+[submodule "hashicorp/hcl"]
+	path = hashicorp/hcl
+	url = git@github.com:hashicorp/hcl.git
+[submodule "hashicorp/go-multierror"]
+	path = hashicorp/go-multierror
+	url = git@github.com:hashicorp/go-multierror.git
+[submodule "hashicorp/raft"]
+	path = hashicorp/raft
+	url = git@github.com:hashicorp/raft.git
+[submodule "hashicorp/nomad"]
+	path = hashicorp/nomad
+	url = git@github.com:hashicorp/nomad.git
+[submodule "hashicorp/yamux"]
+	path = hashicorp/yamux
+	url = git@github.com:hashicorp/yamux.git
+[submodule "hashicorp/go-hclog"]
+	path = hashicorp/go-hclog
+	url = git@github.com:hashicorp/go-hclog.git
+[submodule "hashicorp/go-syslog"]
+	path = hashicorp/go-syslog
+	url = git@github.com:hashicorp/go-syslog.git
+[submodule "hashicorp/golang-lru"]
+	path = hashicorp/golang-lru
+	url = git@github.com:hashicorp/golang-lru.git
+[submodule "hashicorp/go-version"]
+	path = hashicorp/go-version
+	url = git@github.com:hashicorp/go-version.git
+[submodule "hashicorp/go-uuid"]
+	path = hashicorp/go-uuid
+	url = https://github.com/hashicorp/go-uuid
+[submodule "hashicorp/go-plugin"]
+	path = hashicorp/go-plugin
+	url = git@github.com:hashicorp/go-plugin.git
+[submodule "drogon"]
+	path = drogon
+	url = git@github.com:drogonframework/drogon.git
+[submodule "argo-workflows"]
+	path = argo-workflows
+	url = https://github.com/argoproj/argo-workflows
+[submodule "fgtrace"]
+	path = fgtrace
+	url = git@github.com:felixge/fgtrace.git
+[submodule "kubernetes"]
+	path = kubernetes
+	url = git@github.com:kubernetes/kubernetes.git
+[submodule "dragonfly"]
+	path = dragonfly
+	url = git@github.com:dragonflydb/dragonfly.git
+[submodule "mo"]
+	path = mo
+	url = git@github.com:samber/mo.git
+[submodule "qemu"]
+	path = qemu
+	url = git@github.com:qemu/qemu.git
+[submodule "mozilla/sops"]
+	path = mozilla/sops
+	url = git@github.com:mozilla/sops.git
+[submodule "distribution"]
+	path = distribution
+	url = git@github.com:distribution/distribution.git

@@ -286,3 +286,6 @@
 [submodule "distribution"]
 	path = distribution
 	url = git@github.com:distribution/distribution.git
+[submodule "rancher/kine"]
+	path = rancher/kine
+	url = git@github.com:k3s-io/kine.git

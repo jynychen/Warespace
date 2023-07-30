@@ -13,6 +13,7 @@ prompt_main() {
         echo "Commands:"
         echo "  add   - add git repository as submodule"
         echo "  sync  - sync git repository from remote"
+        echo "  list  - list git repositories"
         echo "  check - check if git repository is dirty"
         echo "  clean - clean git repository"
         exit 1
@@ -49,11 +50,11 @@ relative_path() {
 }
 
 prompt_command() {
-    echo -e "\033[1;34m$2\033[0m git repository start $1:"
+    echo -e "$1 Warespace repo - \033[1;34m$2\033[0m"
 }
 
 ## commands ##
-COMMANDS=("add" "sync" "check" "clean")
+COMMANDS=("add" "sync" "list" "check" "clean")
 
 add() {
     prompt_command "${FUNCNAME[0]}" "$(relative_path "$1")"
@@ -70,6 +71,23 @@ add() {
     fi
 }
 
+sync() {
+    prompt_command "${FUNCNAME[0]}" "$(relative_path "$1")"
+
+    cd "$1" || exit
+    git pull --all
+    git submodule update --recursive
+    cd - > /dev/null || exit
+}
+
+list() {
+    prompt_command "${FUNCNAME[0]}" "$(relative_path "$1")"
+
+    cd "$1" || exit
+    git config --get remote.origin.url
+    cd - > /dev/null || exit
+}
+
 check() {
     prompt_command "${FUNCNAME[0]}" "$(relative_path "$1")"
 
@@ -79,15 +97,6 @@ check() {
         echo -e "\033[1;31m$1\033[0m git repository is dirty:"
         git status --short
     fi
-    cd - > /dev/null || exit
-}
-
-sync() {
-    prompt_command "${FUNCNAME[0]}" "$(relative_path "$1")"
-    
-    cd "$1" || exit
-    git pull --all
-    git submodule update --recursive
     cd - > /dev/null || exit
 }
 

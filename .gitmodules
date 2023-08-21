@@ -289,3 +289,6 @@
 [submodule "rancher/kine"]
 	path = rancher/kine
 	url = git@github.com:k3s-io/kine.git
+[submodule "github/cli"]
+	path = github/cli
+	url = git@github.com:cli/cli.git

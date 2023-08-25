@@ -292,3 +292,6 @@
 [submodule "github/cli"]
 	path = github/cli
 	url = git@github.com:cli/cli.git
+[submodule "clash"]
+	path = clash
+	url = git@github.com:Dreamacro/clash.git

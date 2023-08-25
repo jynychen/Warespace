@@ -295,3 +295,6 @@
 [submodule "clash"]
 	path = clash
 	url = git@github.com:Dreamacro/clash.git
+[submodule "projectdiscovery/nuclei"]
+	path = projectdiscovery/nuclei
+	url = git@github.com:projectdiscovery/nuclei.git

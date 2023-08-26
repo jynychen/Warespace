@@ -298,3 +298,15 @@
 [submodule "projectdiscovery/nuclei"]
 	path = projectdiscovery/nuclei
 	url = git@github.com:projectdiscovery/nuclei.git
+[submodule "core-to-core-latency"]
+	path = core-to-core-latency
+	url = https://github.com/nviennot/core-to-core-latency
+[submodule "samber/lo"]
+	path = samber/lo
+	url = https://github.com/samber/lo.git
+[submodule "samber/do"]
+	path = samber/do
+	url = https://github.com/samber/do.git
+[submodule "samber/mo"]
+	path = samber/mo
+	url = https://github.com/samber/mo.git

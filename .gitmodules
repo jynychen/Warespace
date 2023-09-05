@@ -310,3 +310,6 @@
 [submodule "samber/mo"]
 	path = samber/mo
 	url = https://github.com/samber/mo.git
+[submodule "samber/oops"]
+	path = samber/oops
+	url = git@github.com:samber/oops.git

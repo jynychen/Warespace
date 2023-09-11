@@ -313,3 +313,21 @@
 [submodule "samber/oops"]
 	path = samber/oops
 	url = git@github.com:samber/oops.git
+[submodule "apache/yunikorn-k8shim"]
+	path = apache/yunikorn-k8shim
+	url = https://github.com/apache/yunikorn-k8shim
+[submodule "apache/yunikorn-release"]
+	path = apache/yunikorn-release
+	url = git@github.com:apache/yunikorn-release.git
+[submodule "apache/yunikorn-web"]
+	path = apache/yunikorn-web
+	url = git@github.com:apache/yunikorn-web.git
+[submodule "apache/yunikorn-site"]
+	path = apache/yunikorn-site
+	url = git@github.com:apache/yunikorn-site.git
+[submodule "apache/yunikorn-scheduler-interface"]
+	path = apache/yunikorn-scheduler-interface
+	url = git@github.com:apache/yunikorn-scheduler-interface.git
+[submodule "apache/yunikorn-core"]
+	path = apache/yunikorn-core
+	url = git@github.com:apache/yunikorn-core.git

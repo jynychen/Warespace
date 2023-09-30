@@ -331,3 +331,24 @@
 [submodule "apache/yunikorn-core"]
 	path = apache/yunikorn-core
 	url = git@github.com:apache/yunikorn-core.git
+[submodule "AdguardTeam/go-webext"]
+	path = AdguardTeam/go-webext
+	url = git@github.com:AdguardTeam/go-webext.git
+[submodule "AdguardTeam/AdGuardDNS"]
+	path = AdguardTeam/AdGuardDNS
+	url = git@github.com:AdguardTeam/AdGuardDNS.git
+[submodule "AdguardTeam/AdGuardHome"]
+	path = AdguardTeam/AdGuardHome
+	url = git@github.com:AdguardTeam/AdGuardHome.git
+[submodule "AdguardTeam/dnsproxy"]
+	path = AdguardTeam/dnsproxy
+	url = git@github.com:AdguardTeam/dnsproxy.git
+[submodule "AdguardTeam/urlfilter"]
+	path = AdguardTeam/urlfilter
+	url = git@github.com:AdguardTeam/urlfilter.git
+[submodule "AdguardTeam/gomitmproxy"]
+	path = AdguardTeam/gomitmproxy
+	url = git@github.com:AdguardTeam/gomitmproxy.git
+[submodule "AdguardTeam/golibs"]
+	path = AdguardTeam/golibs
+	url = git@github.com:AdguardTeam/golibs.git

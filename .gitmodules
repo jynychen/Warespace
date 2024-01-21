@@ -352,3 +352,6 @@
 [submodule "AdguardTeam/golibs"]
 	path = AdguardTeam/golibs
 	url = git@github.com:AdguardTeam/golibs.git
+[submodule "atlas"]
+	path = atlas
+	url = git@github.com:ariga/atlas.git

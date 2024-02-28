@@ -355,3 +355,6 @@
 [submodule "atlas"]
 	path = atlas
 	url = git@github.com:ariga/atlas.git
+[submodule "ollama"]
+	path = ollama
+	url = git@github.com:ollama/ollama.git

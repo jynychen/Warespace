@@ -358,3 +358,6 @@
 [submodule "ollama"]
 	path = ollama
 	url = git@github.com:ollama/ollama.git
+[submodule "netflix/bpftop"]
+	path = netflix/bpftop
+	url = git@github.com:Netflix/bpftop.git

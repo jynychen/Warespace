@@ -361,3 +361,6 @@
 [submodule "netflix/bpftop"]
 	path = netflix/bpftop
 	url = git@github.com:Netflix/bpftop.git
+[submodule "asterinas"]
+	path = asterinas
+	url = git@github.com:asterinas/asterinas.git
